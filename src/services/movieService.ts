@@ -1,5 +1,5 @@
 import axios from "axios";
-import type { Movie } from "../types/movie.ts";
+import type { Movie } from "../types/movie";
 
 export async function fetchMovies(query: string): Promise<Movie[]> {
   const response = await axios.get<{ results: Movie[] }>(
