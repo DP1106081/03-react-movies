@@ -1,17 +1,17 @@
-import SearchBar from "./components/SearchBar/SearchBar";
+import SearchBar from "../SearchBar/SearchBar";
 import "./App.module.css";
 import toast, { Toaster } from "react-hot-toast";
 
-import { fetchMovies } from "./services/movieService";
+import { fetchMovies } from "../../services/movieService";
 
 import { useState } from "react";
-import type { Movie } from "./types/movie";
-import MovieGrid from "./components/MovieGrid/MovieGrid";
-import MovieModal from "./components/MovieModal/MovieModal";
+import type { Movie } from "../../types/movie";
+import MovieGrid from "../MovieGrid/MovieGrid";
+import MovieModal from "../MovieModal/MovieModal";
 
-import Loader from "./components/Loader/Loader";
+import Loader from "../Loader/Loader";
 
-import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
+import ErrorMessage from "../ErrorMessage/ErrorMessage";
 
 function App() {
   const handleSearch = async (query: string) => {
